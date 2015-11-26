@@ -1,79 +1,105 @@
-
-<!DOCTYPE html>
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/github-dark.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script src="js/lab11.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Компьютерные технологии</title>
-  </head>
+  <title>Comp.tech</title>
+  <meta name="description" content="">
 
-  <body>
-    <a id="forkme_banner" href="https://github.com/NLinar/comptehn">View on GitHub</a>
-    <div class="shell">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Компьютерные технологии</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+</head>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/NLinar/comptehn/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/NLinar/comptehn/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+<body>
 
+    <div class="wrapper">
+    <header>
+      <h1 class="title">Comp.tech</h1>
+    </header>
+    <div id="container">
+      <p class="tagline"></p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/AyupovIlgiz/Comp.tech/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/AyupovIlgiz/Comp.tech/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/AyupovIlgiz/Comp.tech" class="code">View Comp.tech on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <div id="main">
+<div id="letter1">Введите высоту трапеции <input type="text" id="box1"></div>
+<div id="letter2">Введите основание №1 <input type="text" id="box2"></div>
+<div id="letter3">Введите основание №2 <input type="text" id="box3"></div>
+<input type="Button" class="Compilate" value="Вычислить" onclick="trap">
+<span id="answer">Ответ</span>
+</div>
 
-      <span class="banner-fix"></span>
+<style>
+#main{
+position:relative;
+background:rgb(229, 229, 212);
+}
+#box1,#box2,#box3{
+width:50px;
+position:absolute;
+margin-left:30px;
+}
+.Compilate{
+margin-left:130px;
+position:absolute;
+}
+#box1{
+margin-left:13px;
+}
+#letter1, #letter2, #letter3{
+padding:10px;
+margin-top:10px;
+}
+#answer{
+position:absolute;
+margin-left:150px;
+margin-top:40px;
+}
+</style>
 
-
-      <section id="main_content">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Лабараторная работа №1</h3>
-
-<p id="area1">
-  <input type="text" class="td" placeholder="Первая сторона параллелограмма" value="" id="stor1" style="position: absolute; font-family: Lobster, sans-serif; top:5px; left:5px; width: 210px">
-            <input type="text" class="td" placeholder="Вторая сторона параллелограмма" value="" id="stor2"style="position: absolute; font-family: Lobster, sans-serif; top:35px; left:5px; width: 210px"></br>
-            <input type="text" class="td" placeholder="Угол между ними" value="" id="ugol" style="position: absolute; font-family: Lobster, sans-serif; top:65px; left:5px; width: 210px">
-            <input type="button" value="Вычислить" onclick="det()" style="position: absolute; font-family: Lobster, sans-serif; top:95px; left: 5px; width: 210px; height: 25px; font-family: Lobster, sans-serif;">
-            <span style="position: absolute; font-family: Lobster, sans-serif; top:135px; left: 5px;" id = "answer"> Ответ: </span>
-</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/NLinar">NLinar</a> can be found on <a href="https://github.com/NLinar/comptehn">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-    
-  </body>
+          
+        </article>
+      </div>
+  </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/AyupovIlgiz" class="avatar"><img src="https://avatars3.githubusercontent.com/u/16036386?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/AyupovIlgiz">AyupovIlgiz</a> maintains <a href="https://github.com/AyupovIlgiz/Comp.tech">Comp.tech</a></p>
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/AyupovIlgiz/Comp.tech/tarball/master" class="tar">tar</a><a href="https://github.com/AyupovIlgiz/Comp.tech/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+  
+</body>
 </html>
+<script>
+function trap(){
+var a,b,h,S;
+a=parsetInt(document.getElementById("box1").value;
+b=parsetInt(document.getElementById("box2").value;
+h=parsetInt(document.getElementById("box3").value;
+S=1/2*h*(a+b);
+document.getElementById("answer").innerHTML=string(S);
+}
+</script>
